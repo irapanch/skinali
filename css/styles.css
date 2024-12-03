@@ -71,7 +71,22 @@ a:-webkit-any-link {
   transition: 0.5s;
   outline: none;
 }
-
+.main__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  color: var(--main-white);
+  text-transform: uppercase;
+  width: 140px;
+  height: 44px;
+  font-size: 16px;
+  background: var(--primary);
+  border: 2px solid var(--primary);
+  box-shadow: none;
+  transition: 0.5s;
+  outline: none;
+}
 .container {
   width: 1400px;
   padding: 0 12px;
@@ -159,28 +174,14 @@ header {
   width: 24px;
   height: 24px;
 }
-.header__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 28px;
-  color: var(--main-white);
-  text-transform: uppercase;
-  width: 140px;
-  height: 44px;
-  font-size: 16px;
-  background: var(--primary);
-  border: 2px solid var(--primary);
-  box-shadow: none;
-  transition: 0.5s;
-  outline: none;
-}
+
 
 /* ---   hero_section   --- */
 .hero__section {
   height: 911px;
   color: var(--main-white);
-  background: var(--hero-background-color);
+  /* background: var(--hero-background-color); */
+  background-image: linear-gradient( var(--hero-background-color), var(--hero-background-color)), url(../images/visual/d3danimation_bg_3__1920.webp);
 }
 .hero__inner {
   display: flex;
@@ -263,4 +264,41 @@ header {
   margin: auto;
 }
 
+/* ----------- visual__section" ------------ */
 
+.visual__section{
+	
+	min-height: 620px;
+	padding-top: 160px;
+	padding-bottom: 180px;
+	background-image: linear-gradient( var(--hero-background-color), var(--hero-background-color)), url(../images/visual/d3danimation_bg_3__1920.webp);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-position 0.3s ease;
+}
+.visual__content{
+  width: 1006px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-white);
+}
+
+.visual__title {
+
+  font-size: 48px;
+font-weight: 600;
+margin-bottom: 36px;
+}
+
+.visual__subtitle{
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.visual__content .main__btn {
+  width: 253px;
+  height: 54px;
+  margin: auto;
+}
