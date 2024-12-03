@@ -26,6 +26,12 @@ document.addEventListener('scroll', function() {
     } else {
         phoneIcon.classList.remove('phone-scroll');
     }
+    const border = document.querySelector('.text__border' );
+    if (scrollPosition > 0) {
+        border.classList.add('text__border-scroll');
+    } else {
+        border.classList.remove('text__border-scroll');
+    }
     
 
   });
