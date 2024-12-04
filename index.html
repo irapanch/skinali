@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kuchenny paneli</title>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -365,7 +365,9 @@
     <section class="reviews__section">
       <div class="reviews__inner container">
         <h2 class="reviews__title">Opinie naszych klientów</h2>
-        <div class="reviews__slider">
+        <div class="reviews__slider swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide">
             <div class="swiper-card reviews__card">
@@ -378,7 +380,7 @@
             </div>
           </div>
           <!-- Slide 2 -->
-          <!-- <div class="swiper-slide">
+          <div class="swiper-slide">
             <div class="swiper-card reviews__card">
               <div class="card__top">
               <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
@@ -387,8 +389,44 @@
             <p class="card__text">Super EKIPA przez duże E. Pan  Daniel i pan Mikołaj - zgrany  super duet. Wszystko dokładnie,  profesjonalnie zamontowane , wyczyszczone, umyte, posprzątane - jednym słowem SUPER.  Robota wykonana, a śladów działalności brak oprócz extra szkła. Dziękuję pani Tetianie za współpracę - wszystko tak jak chciałam i zamawiałam.</p>
             <h3 class="card__subtitle">Małgorzata Stupnicka</h3>
             </div>
-          </div> -->
-
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="swiper-card reviews__card">
+              <div class="card__top">
+              <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
+              <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
+            </div>
+            <p class="card__text">Współpraca z firmą od początku do końca przebiegała bardzo dobrze.
+              W sposób profesjonalny i szybki pracownicy reagowali na maile i starali się zadowolić klienta przesyłając kolejne wizualizacje dopracowywanych obrazów. Przez cały czas byli uprzejmi i konkretni. Montaż paneli przebiegł sprawnie i czysto. Dla mnie jedynie cena była trochę wygórowana, ale może to jest cena za profesjonalizm. Polecam tę firmę.</p>
+            <h3 class="card__subtitle">Stanisław Kowalski</h3>
+            </div>
+          </div>
+           <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                      <div class="swiper-card reviews__card">
+                        <div class="card__top">
+                        <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
+                        <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
+                      </div>
+                      <p class="card__text">To co bardzo mi się podobało to naprawdę miła obsługa na każdym etapie realizacji projektu. Mam wiele doświadczeń z różnego rodzaju wykonawcami i chciałbym aby choć część z nich tak profesjonalnie podchodziła do swojej pracy. Jeżeli chodzi o sam produkt to naprawdę robi dobre wrażenie. Jest kilka spraw, które trzeba wyjaśnić na początku, żeby nie było zaskoczenia przy odbiorze, ale efekt WOW ! jest murowany.</p>
+                      <h3 class="card__subtitle">Artur Wasilewski</h3>
+                      </div>
+           </div>
+            <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="swiper-card reviews__card">
+              <div class="card__top">
+              <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
+              <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
+            </div>
+            <p class="card__text">Przygoda z Donskinali to czysta przyjemność profesjonalizm od rozmowy telefonicznej, wstępnej wyceny zgodnej później z właściwą po pomiarze przez Pana Wiktora i jego pomocnika. Pani z biura dokładnie rozumie oczekiwania zawsze sympatyczna i niezwykle pomocna nawet po godzinach pracy. Wszystko przebiegło bardzo sprawnie a szkło jest przepiękne.  Bardzo Państwu dziękuję szczerze polecam wszystkim wątpiącym lub niezdecydowanym. Warto.</p>
+            <h3 class="card__subtitle">Joanna Węgłowska</h3>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
       </div>
     </section>
     <section class="contact__section">
@@ -488,5 +526,6 @@
     </footer>
     <script src="./js/visual_section-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-init.js"></script>
   </body>
 </html>

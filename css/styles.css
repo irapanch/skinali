@@ -534,6 +534,10 @@ header {
     url(../images/form/IMG_20210920_165708.webp);
 }
 /* ----------- reviews__section -------------- */
+.reviews__section{
+  background: var(--gray);
+}
+
 .reviews__inner {
   padding-top: 110px;
   padding-bottom: 90px;
@@ -547,15 +551,16 @@ header {
   text-align: center;
 }
 .reviews__slider{
-  display: flex;
-  gap: 40px;
+  
 }
 .reviews__card {
-  outline: 1px solid blue;
+
+  background: var(--main-white);
   width: 668px;
   min-height: 386px;
   padding: 60px;
   padding-top: 10px;
+  margin-bottom: 20px;
 
 }
 .card__top {
