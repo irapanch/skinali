@@ -2,6 +2,7 @@
   --dark: #000000;
   --main-white: #ffffff;
   --primary: #48b05d;
+  /* --primary: #ff9204; */
   --secondary: #0d270d;
   --gray: #f4f4f4;
   --hero-background-color: rgba(26, 26, 26, 0.7);
@@ -395,11 +396,31 @@ width: 33%;
     ),
     url(../images/video/IMG_20210302_205807.webp);
 }
+.play-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--main-white);
+}
+
+.video__btn:hover,
 .video__btn{
+  background-color: var(--dark);
+}
+
+.video__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
-  height: 140px;
-  border-radius:  50%;
-  background-color: var(--primary);
+    height: 140px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    transition: all 0.3s ease;
 }
 
 /* ----------- contact__section ------------ */
