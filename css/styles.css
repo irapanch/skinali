@@ -440,10 +440,32 @@ header {
   grid-row-gap: 10px;
   margin-bottom: 48px;
 }
-.portfolio__item img {
+
+/* 
+.oferta__img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.oferta__item-img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.oferta__item:hover .oferta__item-img {
+  transform: scale(1.1);
+}
+*/
+.portfolio__item {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__item:hover .portfolio__item-img {
+  transform: scale(1.1);
+}
+.portfolio__item-img  {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 .div1 {
   grid-area: 1 / 1 / 3 / 3;
