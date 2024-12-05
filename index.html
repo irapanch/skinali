@@ -25,13 +25,15 @@
       <div class="header__top">
         <div class="header__top-inner container">
           <p>
-            <a href="./promocje.html">BLACK SALE</a>
+            <a class="header__top-sale" href="./promocje.html">BLACK SALE</a>
             : Tylko teraz:
             <strong>-20% na montaż paneli szklanych! &nbsp;</strong>
             📅 Zamów i zaliczkuj między
             <strong>29.11 – 6.12</strong>
             . &nbsp; 📞 Zadzwoń:
-            <a href="tel:+48735042000"><strong>735 042 000</strong></a>
+            <a class="header__top-sale" href="tel:+48735042000"
+              ><strong>735 042 000</strong></a
+            >
           </p>
         </div>
       </div>
@@ -41,25 +43,74 @@
           <nav>
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a href="./oferta.html">Oferta</a>
+                <span class="ovh">
+                  <a
+                    class="text-animation"
+                    data-text="Oferta"
+                    href="./oferta.html"
+                    >Oferta</a
+                  ></span
+                >
               </li>
               <li class="header__menu-item">
-                <a href="./grafiki.html">Grafiki</a>
+                <span class="ovh">
+                  <a
+                    class="text-animation"
+                    data-text="Grafiki"
+                    href="./grafiki.html"
+                    >Grafiki</a
+                  ></span
+                >
               </li>
               <li class="header__menu-item">
-                <a href="./realizacje.html">Realizacje</a>
+                <span class="ovh">
+                  <a
+                    class="text-animation"
+                    data-text="Realizacje"
+                    href="./realizacje.html"
+                    >Realizacje</a
+                  ></span
+                >
               </li>
               <li class="header__menu-item">
-                <a href="./o-nas.html">O nas</a>
+                <span class="ovh">
+                  <a
+                    class="text-animation"
+                    data-text="O nas"
+                    href="./o-nas.html"
+                    >O nas</a
+                  ></span
+                >
               </li>
               <li class="header__menu-item">
-                <a href="./kontakt.html">Kontakt</a>
+                <span class="ovh">
+                  <a
+                    class="text-animation"
+                    data-text="Kontakt"
+                    href="./kontakt.html"
+                    >Kontakt</a
+                  ></span
+                >
               </li>
               <li class="header__menu-item">
-                <a href="./cennik.html">Cennik</a>
+                <span class="ovh">
+                  <a
+                    class="text-animation"
+                    data-text="Cennik"
+                    href="./cennik.html"
+                    >Cennik</a
+                  ></span
+                >
               </li>
               <li class="header__menu-item">
-                <a href="./oferty-pracy">Oferty pracy</a>
+                <span class="ovh">
+                  <a
+                    class="text-animation"
+                    data-text="Oferty pracy"
+                    href="./oferty-pracy"
+                    >Oferty pracy</a
+                  ></span
+                >
               </li>
             </ul>
           </nav>
@@ -69,7 +120,7 @@
                 <use href="./images/icons/icons.svg#icon-phone-mob"></use>
               </svg>
               <span class="ovh">
-                <span class="text-animation text__border"
+                <span class="text-animation text__border" data-text="Zadzwoń do nas"
                   >Zadzwoń do nas</span
                 ></span
               ></a
@@ -207,9 +258,9 @@
             >
           </li>
         </ul>
-        <a class="btn" href="./oferta.html">
+        <a class="btn oferta__btn" href="./oferta.html">
           <span class="ovh"
-            ><span class="text-animation" data-text="CENNIK"
+            ><span class="text-animation" data-text="Wszystkie oferty"
               >Wszystkie oferty</span
             ></span
           >
@@ -226,7 +277,7 @@
         </h3>
         <a class="main__btn" href="./grafiki.html">
           <span class="ovh"
-            ><span class="text-animation" data-text="CENNIK"
+            ><span class="text-animation" data-text="Wizualizacja Online"
               >Wizualizacja Online</span
             ></span
           >
@@ -283,7 +334,9 @@
         <div class="oprosnik__slider swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <div class="swiper-pagination-progressbar swiper-pagination-progressbar-fill"></div>
+            <div
+              class="swiper-pagination-progressbar swiper-pagination-progressbar-fill"
+            ></div>
             <!-- Slide 1 -->
             <div class="swiper-slide">
               <div class="oprosnik__card">
@@ -328,63 +381,73 @@
               <div class="oprosnik__card">
                 <div class="oprosnik__card-form">
                   <h3 class="oprosnik__card-subtitle">
-                    Dziękujemy! Prosimy wpisać swoje dane abyśmy mogli nawiązać z Tobą kontakt.
+                    Dziękujemy! Prosimy wpisać swoje dane abyśmy mogli nawiązać
+                    z Tobą kontakt.
                   </h3>
                   <form
-                  class="oprosnik-form__submit"
-                  action="./thanks-page.html"
-                  method="GET"
-                >
-                
-                  <div class="oprosnik-form__wrapper ">
+                    class="oprosnik-form__submit"
+                    action="./thanks-page.html"
+                    method="GET"
+                  >
+                    <div class="oprosnik-form__wrapper">
+                      <label
+                        class="oprosnik-form__userdata"
+                        for="oprosnik-user-name"
+                        >Imię
+                      </label>
+                      <div class="oprosnik-form__input-wrapper">
+                        <input
+                          class="oprosnik-form__input"
+                          type="text"
+                          name="oprosnik-user-name"
+                          id="oprosnik-user-name"
+                          required
+                          placeholder="Podaj swoje imię"
+                          pattern="^[a-zA-Z]+$"
+                          minlength="2"
+                        />
+                      </div>
 
-                    <label class="oprosnik-form__userdata" for="oprosnik-user-name">Imię </label>
-                    <div class="oprosnik-form__input-wrapper">
-                      <input
-                        class="oprosnik-form__input"
-                        type="text"
-                        name="oprosnik-user-name"
-                        id="oprosnik-user-name"
-                        required
-                        placeholder="Podaj swoje imię"
-                        pattern="^[a-zA-Z]+$"
-                        minlength="2"
-                      />
-                    </div>
+                      <label
+                        class="oprosnik-form__userdata"
+                        for="oprosnik-user-phone-number"
+                        >Telefon
+                      </label>
+                      <div class="oprosnik-form__input-wrapper">
+                        <input
+                          class="oprosnik-form__input"
+                          type="tel"
+                          name="oprosnik-user-phone-number"
+                          id="oprosnik-user-phone-number"
+                          placeholder="Numer telefonu"
+                          required
+                          pattern="[0-9]{10}"
+                        />
+                      </div>
 
-                    <label class="oprosnik-form__userdata" for="oprosnik-user-phone-number">Telefon </label>
-                    <div class="oprosnik-form__input-wrapper">
-                      <input
-                        class="oprosnik-form__input"
-                        type="tel"
-                        name="oprosnik-user-phone-number"
-                        id="oprosnik-user-phone-number"
-                        placeholder="Numer telefonu"
-                        required
-                        pattern="[0-9]{10}"
-                      />
+                      <label
+                        class="oprosnik-form__userdata"
+                        for="oprosnik-user-email"
+                        >E-Mail
+                      </label>
+                      <div class="oprosnik-form__input-wrapper">
+                        <input
+                          class="oprosnik-form__input"
+                          type="email"
+                          name="oprosnik-user-email"
+                          id="oprosnik-user-email"
+                          placeholder="Podaj swój adres"
+                        />
+                      </div>
                     </div>
-                   
-                    <label class="oprosnik-form__userdata" for="oprosnik-user-email">E-Mail</label>
-                    <div class="oprosnik-form__input-wrapper">
-                      <input
-                        class="oprosnik-form__input"
-                        type="email"
-                        name="oprosnik-user-email"
-                        id="oprosnik-user-email"
-                        placeholder="Podaj swój adres"
-                      />
-                    </div>
-                  </div>
-                  <button type="submit" class="main__btn">
-                    <span class="ovh"
-                      ><span class="text-animation" data-text="CENNIK">
-                        WYŚLIJ
-                      </span></span
-                    >
-                  </button>
-                </form>
-                 
+                    <button type="submit" class="main__btn">
+                      <span class="ovh"
+                        ><span class="text-animation" data-text="CENNIK">
+                          WYŚLIJ
+                        </span></span
+                      >
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -440,9 +503,9 @@
             />
           </li>
         </ul>
-        <a class="btn" href="./oferta.html">
+        <a class="btn portfolio__btn" href="./oferta.html">
           <span class="ovh"
-            ><span class="text-animation" data-text="CENNIK"
+            ><span class="text-animation" data-text="Wszystkie REALIZACJE"
               >Wszystkie REALIZACJE</span
             ></span
           >
@@ -451,11 +514,7 @@
     </section>
     <section class="form__section">
       <div class="form__inner container">
-        <form
-          class="form__submit"
-          action="./thanks-page.html"
-          method="GET"
-        >
+        <form class="form__submit" action="./thanks-page.html" method="GET">
           <h2 class="form__title">Umów się na POMIAR</h2>
           <h3 class="form__subtitle">
             Zostaw nam kontakt do siebie a my oddzwonimy
@@ -499,11 +558,14 @@
           </div>
           <button type="submit" class="main__btn">
             <span class="ovh"
-              ><span class="text-animation" data-text="CENNIK">
+              ><span class="text-animation" data-text="WYŚLIJ">
                 WYŚLIJ
               </span></span
             >
           </button>
+          <div class="form__notification">
+            * pomiary realizowane od 9:00 do 18:00
+          </div>
         </form>
         <div class="form__image"></div>
       </div>
@@ -511,6 +573,7 @@
     <section class="reviews__section">
       <div class="reviews__inner container">
         <h2 class="reviews__title">Opinie naszych klientów</h2>
+
         <div class="reviews__slider swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -670,6 +733,8 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next reviews__swiper-button-next"></div>
+          <div class="swiper-button-prev reviews__swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -686,7 +751,7 @@
           <p class="contact__text">Szachowa 1, 04-894 Warszawa</p>
           <a class="btn contact__btn" href="./kontakt.html">
             <span class="ovh"
-              ><span class="text-animation" data-text="CENNIK"
+              ><span class="text-animation" data-text="KONTAKT"
                 >KONTAKT</span
               ></span
             >
