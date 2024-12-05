@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kuchenny paneli</title>
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -274,24 +274,170 @@
         </div>
       </div>
     </section>
+    <section class="oprosnik__section">
+      <div class="oprosnik__inner container">
+        <h2 class="oprosnik__title">
+          Oblicz cenę paneli szklanych online w ciągu 1 minuty z
+          <strong>dokładnością 95%</strong>
+        </h2>
+        <div class="oprosnik__slider swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-pagination-progressbar swiper-pagination-progressbar-fill"></div>
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="oprosnik__card">
+                <div class="oprosnik__card-form">
+                  <h3 class="oprosnik__card-subtitle">
+                    W którym pomieszczeniu chciałbyś mieć zamontowany panel?
+                  </h3>
+
+                  <!-- radio-button -->
+                  <div class="radio-button__container">
+                    <div class="radio">
+                      <input id="radio-1" name="radio" type="radio" />
+                      <label for="radio-1" class="radio-label">kuchnia</label>
+                    </div>
+
+                    <div class="radio">
+                      <input id="radio-2" name="radio" type="radio" />
+                      <label for="radio-2" class="radio-label">łazienka</label>
+                    </div>
+
+                    <div class="radio">
+                      <input id="radio-3" name="radio" type="radio" />
+                      <label for="radio-3" class="radio-label">sypialnia</label>
+                    </div>
+
+                    <div class="radio">
+                      <input id="radio-4" name="radio" type="radio" />
+                      <label for="radio-4" class="radio-label">salon</label>
+                    </div>
+
+                    <div class="radio">
+                      <input id="radio-5" name="radio" type="radio" />
+                      <label for="radio-5" class="radio-label">inne</label>
+                    </div>
+                  </div>
+                  <!-- //radio-button -->
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="oprosnik__card">
+                <div class="oprosnik__card-form">
+                  <h3 class="oprosnik__card-subtitle">
+                    Dziękujemy! Prosimy wpisać swoje dane abyśmy mogli nawiązać z Tobą kontakt.
+                  </h3>
+                  <form
+                  class="oprosnik-form__submit"
+                  action="./thanks-page.html"
+                  method="GET"
+                >
+                
+                  <div class="oprosnik-form__wrapper ">
+
+                    <label class="oprosnik-form__userdata" for="oprosnik-user-name">Imię </label>
+                    <div class="oprosnik-form__input-wrapper">
+                      <input
+                        class="oprosnik-form__input"
+                        type="text"
+                        name="oprosnik-user-name"
+                        id="oprosnik-user-name"
+                        required
+                        placeholder="Podaj swoje imię"
+                        pattern="^[a-zA-Z]+$"
+                        minlength="2"
+                      />
+                    </div>
+
+                    <label class="oprosnik-form__userdata" for="oprosnik-user-phone-number">Telefon </label>
+                    <div class="oprosnik-form__input-wrapper">
+                      <input
+                        class="oprosnik-form__input"
+                        type="tel"
+                        name="oprosnik-user-phone-number"
+                        id="oprosnik-user-phone-number"
+                        placeholder="Numer telefonu"
+                        required
+                        pattern="[0-9]{10}"
+                      />
+                    </div>
+                   
+                    <label class="oprosnik-form__userdata" for="oprosnik-user-email">E-Mail</label>
+                    <div class="oprosnik-form__input-wrapper">
+                      <input
+                        class="oprosnik-form__input"
+                        type="email"
+                        name="oprosnik-user-email"
+                        id="oprosnik-user-email"
+                        placeholder="Podaj swój adres"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="main__btn">
+                    <span class="ovh"
+                      ><span class="text-animation" data-text="CENNIK">
+                        WYŚLIJ
+                      </span></span
+                    >
+                  </button>
+                </form>
+                 
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <!-- Slide 4 -->
+            <!-- Slide 5 -->
+            <!-- Slide 6 -->
+            <!-- Slide 7 -->
+            <!-- Slide 8 -->
+            <!-- Slide 9 -->
+            <!-- Slide 10 -->
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="portfolio__section">
       <div class="portfolio__inner container">
         <h2 class="portfolio__title">Nasze realizacje</h2>
         <ul class="porfolio__list">
           <li class="portfolio__item div1">
-            <img  class="portfolio__item-img"  src="./images/portfolio/IMG_20211022_114610.webp" alt="" />
+            <img
+              class="portfolio__item-img"
+              src="./images/portfolio/IMG_20211022_114610.webp"
+              alt=""
+            />
           </li>
           <li class="portfolio__item div2">
-            <img  class="portfolio__item-img" src="./images/portfolio/IMG_20210904_110919.webp" alt="" />
+            <img
+              class="portfolio__item-img"
+              src="./images/portfolio/IMG_20210904_110919.webp"
+              alt=""
+            />
           </li>
           <li class="portfolio__item div3">
-            <img  class="portfolio__item-img" src="./images/portfolio/IMG_20210505_193259.webp" alt="" />
+            <img
+              class="portfolio__item-img"
+              src="./images/portfolio/IMG_20210505_193259.webp"
+              alt=""
+            />
           </li>
           <li class="portfolio__item div4">
-            <img  class="portfolio__item-img" src="./images/portfolio/IMG_20210223_145327.webp" alt="" />
+            <img
+              class="portfolio__item-img"
+              src="./images/portfolio/IMG_20210223_145327.webp"
+              alt=""
+            />
           </li>
           <li class="portfolio__item div5">
-            <img  class="portfolio__item-img" src="./images/portfolio/IMG_20230302_122557.webp" alt="" />
+            <img
+              class="portfolio__item-img"
+              src="./images/portfolio/IMG_20230302_122557.webp"
+              alt=""
+            />
           </li>
         </ul>
         <a class="btn" href="./oferta.html">
@@ -307,7 +453,7 @@
       <div class="form__inner container">
         <form
           class="form__submit"
-          action="/cardiotensive-landing/thanks-page.html"
+          action="./thanks-page.html"
           method="GET"
         >
           <h2 class="form__title">Umów się na POMIAR</h2>
@@ -366,67 +512,166 @@
       <div class="reviews__inner container">
         <h2 class="reviews__title">Opinie naszych klientów</h2>
         <div class="reviews__slider swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div class="swiper-card reviews__card">
-              <div class="card__top">
-              <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
-              <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <div class="card__top">
+                  <img
+                    src="./images/reviews/google-icon.webp"
+                    alt="Logo Google"
+                    class="card-logo"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./images/reviews/stars.webp"
+                    alt=" Google stars"
+                    class="card-stars"
+                    width="120"
+                    height="80"
+                  />
+                </div>
+                <p class="card__text">
+                  Efekt WOW! Zamówiliśmy szklane panele do kuchni oraz łazienki
+                  i są przepiękne. Wzór to bardzo dobrej jakości zdjęcia no i to
+                  podświetlenie! Z nim czujemy sie jak w kinie:))) A sam montaż
+                  oraz współpraca z firmą bardzo profesjonalna+fachowa porada i
+                  sprawna instalacja. I co również ważne, w milej atmosferze.
+                  Dziękujemy serdecznie Pani Dominice oraz Panom: Danielowi i
+                  Mikołajowi.
+                </p>
+                <h3 class="card__subtitle">Anna</h3>
+              </div>
             </div>
-            <p class="card__text">Efekt WOW! Zamówiliśmy szklane panele do kuchni oraz łazienki i są przepiękne. Wzór to bardzo dobrej jakości zdjęcia no i to podświetlenie! Z nim czujemy sie jak w kinie:))) A sam montaż oraz współpraca z firmą bardzo profesjonalna+fachowa porada i sprawna instalacja. I co również ważne, w milej atmosferze. Dziękujemy serdecznie Pani Dominice oraz Panom: Danielowi i Mikołajowi.</p>
-            <h3 class="card__subtitle">Anna</h3>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <div class="card__top">
+                  <img
+                    src="./images/reviews/google-icon.webp"
+                    alt="Logo Google"
+                    class="card-logo"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./images/reviews/stars.webp"
+                    alt=" Google stars"
+                    class="card-stars"
+                    width="120"
+                    height="80"
+                  />
+                </div>
+                <p class="card__text">
+                  Super EKIPA przez duże E. Pan Daniel i pan Mikołaj - zgrany
+                  super duet. Wszystko dokładnie, profesjonalnie zamontowane ,
+                  wyczyszczone, umyte, posprzątane - jednym słowem SUPER. Robota
+                  wykonana, a śladów działalności brak oprócz extra szkła.
+                  Dziękuję pani Tetianie za współpracę - wszystko tak jak
+                  chciałam i zamawiałam.
+                </p>
+                <h3 class="card__subtitle">Małgorzata Stupnicka</h3>
+              </div>
             </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <div class="swiper-card reviews__card">
-              <div class="card__top">
-              <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
-              <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <div class="card__top">
+                  <img
+                    src="./images/reviews/google-icon.webp"
+                    alt="Logo Google"
+                    class="card-logo"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./images/reviews/stars.webp"
+                    alt=" Google stars"
+                    class="card-stars"
+                    width="120"
+                    height="80"
+                  />
+                </div>
+                <p class="card__text">
+                  Współpraca z firmą od początku do końca przebiegała bardzo
+                  dobrze. W sposób profesjonalny i szybki pracownicy reagowali
+                  na maile i starali się zadowolić klienta przesyłając kolejne
+                  wizualizacje dopracowywanych obrazów. Przez cały czas byli
+                  uprzejmi i konkretni. Montaż paneli przebiegł sprawnie i
+                  czysto. Dla mnie jedynie cena była trochę wygórowana, ale może
+                  to jest cena za profesjonalizm. Polecam tę firmę.
+                </p>
+                <h3 class="card__subtitle">Stanisław Kowalski</h3>
+              </div>
             </div>
-            <p class="card__text">Super EKIPA przez duże E. Pan  Daniel i pan Mikołaj - zgrany  super duet. Wszystko dokładnie,  profesjonalnie zamontowane , wyczyszczone, umyte, posprzątane - jednym słowem SUPER.  Robota wykonana, a śladów działalności brak oprócz extra szkła. Dziękuję pani Tetianie za współpracę - wszystko tak jak chciałam i zamawiałam.</p>
-            <h3 class="card__subtitle">Małgorzata Stupnicka</h3>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <div class="card__top">
+                  <img
+                    src="./images/reviews/google-icon.webp"
+                    alt="Logo Google"
+                    class="card-logo"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./images/reviews/stars.webp"
+                    alt=" Google stars"
+                    class="card-stars"
+                    width="120"
+                    height="80"
+                  />
+                </div>
+                <p class="card__text">
+                  To co bardzo mi się podobało to naprawdę miła obsługa na
+                  każdym etapie realizacji projektu. Mam wiele doświadczeń z
+                  różnego rodzaju wykonawcami i chciałbym aby choć część z nich
+                  tak profesjonalnie podchodziła do swojej pracy. Jeżeli chodzi
+                  o sam produkt to naprawdę robi dobre wrażenie. Jest kilka
+                  spraw, które trzeba wyjaśnić na początku, żeby nie było
+                  zaskoczenia przy odbiorze, ale efekt WOW ! jest murowany.
+                </p>
+                <h3 class="card__subtitle">Artur Wasilewski</h3>
+              </div>
             </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <div class="swiper-card reviews__card">
-              <div class="card__top">
-              <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
-              <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
-            </div>
-            <p class="card__text">Współpraca z firmą od początku do końca przebiegała bardzo dobrze.
-              W sposób profesjonalny i szybki pracownicy reagowali na maile i starali się zadowolić klienta przesyłając kolejne wizualizacje dopracowywanych obrazów. Przez cały czas byli uprzejmi i konkretni. Montaż paneli przebiegł sprawnie i czysto. Dla mnie jedynie cena była trochę wygórowana, ale może to jest cena za profesjonalizm. Polecam tę firmę.</p>
-            <h3 class="card__subtitle">Stanisław Kowalski</h3>
-            </div>
-          </div>
-           <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                      <div class="swiper-card reviews__card">
-                        <div class="card__top">
-                        <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
-                        <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
-                      </div>
-                      <p class="card__text">To co bardzo mi się podobało to naprawdę miła obsługa na każdym etapie realizacji projektu. Mam wiele doświadczeń z różnego rodzaju wykonawcami i chciałbym aby choć część z nich tak profesjonalnie podchodziła do swojej pracy. Jeżeli chodzi o sam produkt to naprawdę robi dobre wrażenie. Jest kilka spraw, które trzeba wyjaśnić na początku, żeby nie było zaskoczenia przy odbiorze, ale efekt WOW ! jest murowany.</p>
-                      <h3 class="card__subtitle">Artur Wasilewski</h3>
-                      </div>
-           </div>
             <!-- Slide 5 -->
-          <div class="swiper-slide">
-            <div class="swiper-card reviews__card">
-              <div class="card__top">
-              <img src="./images/reviews/google-icon.webp" alt="Logo Google" class="card-logo" width="48" height="48">
-              <img src="./images/reviews/stars.webp" alt=" Google stars" class="card-stars" width="120" height="80">
-            </div>
-            <p class="card__text">Przygoda z Donskinali to czysta przyjemność profesjonalizm od rozmowy telefonicznej, wstępnej wyceny zgodnej później z właściwą po pomiarze przez Pana Wiktora i jego pomocnika. Pani z biura dokładnie rozumie oczekiwania zawsze sympatyczna i niezwykle pomocna nawet po godzinach pracy. Wszystko przebiegło bardzo sprawnie a szkło jest przepiękne.  Bardzo Państwu dziękuję szczerze polecam wszystkim wątpiącym lub niezdecydowanym. Warto.</p>
-            <h3 class="card__subtitle">Joanna Węgłowska</h3>
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <div class="card__top">
+                  <img
+                    src="./images/reviews/google-icon.webp"
+                    alt="Logo Google"
+                    class="card-logo"
+                    width="48"
+                    height="48"
+                  />
+                  <img
+                    src="./images/reviews/stars.webp"
+                    alt=" Google stars"
+                    class="card-stars"
+                    width="120"
+                    height="80"
+                  />
+                </div>
+                <p class="card__text">
+                  Przygoda z Donskinali to czysta przyjemność profesjonalizm od
+                  rozmowy telefonicznej, wstępnej wyceny zgodnej później z
+                  właściwą po pomiarze przez Pana Wiktora i jego pomocnika. Pani
+                  z biura dokładnie rozumie oczekiwania zawsze sympatyczna i
+                  niezwykle pomocna nawet po godzinach pracy. Wszystko
+                  przebiegło bardzo sprawnie a szkło jest przepiękne. Bardzo
+                  Państwu dziękuję szczerze polecam wszystkim wątpiącym lub
+                  niezdecydowanym. Warto.
+                </p>
+                <h3 class="card__subtitle">Joanna Węgłowska</h3>
+              </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
       </div>
     </section>
     <section class="contact__section">

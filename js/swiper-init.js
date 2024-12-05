@@ -1,4 +1,4 @@
-const swiper = new Swiper('.reviews__slider', {
+const swiperReviews = new Swiper('.reviews__slider', {
     
     direction: 'horizontal',
     loop: true,
@@ -10,6 +10,23 @@ const swiper = new Swiper('.reviews__slider', {
     },
 
     slidesPerView: 2,
+    spaceBetween: 30,
+  
+    
+  });
+
+  const swiperOprosnik = new Swiper('.oprosnik__slider', {
+    
+    direction: 'horizontal',
+    loop: true,
+  
+    
+    pagination: {
+      el: '.swiper-pagination-progressbar-fill ',
+      // clickable: true,
+    },
+
+    slidesPerView: 1,
     spaceBetween: 30,
   
     

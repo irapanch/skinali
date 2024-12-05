@@ -5,6 +5,7 @@
   /* --primary: #ff9204; */
   --secondary: #0d270d;
   --gray: #f4f4f4;
+  --border-light-color: #E7E7E7;
   --hero-background-color: rgba(26, 26, 26, 0.7);
   --accent-background-color: rgba(42, 65, 42, 0.1);
   --top-background-color: rgba(88, 133, 88, 0.1);
@@ -14,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--dark);
   background-color: var(--background-white);
 }
@@ -418,6 +419,145 @@ header {
   transform: translate(50%, -50%);
   transition: all 0.3s ease;
 }
+/* ---------------- oprosnik__section ---------------- */
+.oprosnik__section{
+  background: url(../images/footer/footer-bg.webp) repeat-x top left var(--secondary);
+  background-size: 50% auto;
+}
+.oprosnik__inner{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.oprosnik__title{
+  width: 920px;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  color: var(--main-white);
+  
+}
+.oprosnik__title strong {
+  color: var(--primary);
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--primary);
+  border-radius: 3px;}
+
+.oprosnik__card{
+  width: 1378px;
+  background: var(--main-white);
+  border-radius: 10px;
+  padding: 60px 0;
+}
+.oprosnik__card-form{
+  width: 720px;
+  margin: auto;
+}
+.oprosnik__card-subtitle{
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* ---- radio-button ---- */
+.radio {
+  height: 50px;
+  position: relative;
+  padding: 16px 20px 14px 20px;
+  border: 1px solid var(--border-light-color);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: all 250ms ease;
+}
+.radio:hover,
+.radio:focus{
+  border: 1px solid var(--primary);
+}
+.radio-checked{}
+
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio input[type="radio"] + .radio-label:before {
+  content: '';
+  border-radius: 100%;
+  border: 1px solid var(--border-light-color);
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+
+.radio input[type="radio"]:checked + .radio-label:before {
+  outline: none;
+  border: 1px solid  var(--primary);
+  background: var(--primary);
+
+}
+
+.radio input[type="radio"]:focus + .radio-label:before {
+  outline: none;
+  border: 1px solid  var(--primary);
+}
+
+.radio input[type="radio"] + .radio-label:empty:before {
+  margin-right: 0;
+}
+.radio:has(input[type="radio"]:checked),
+.radio:has(input[type="radio"]:not(:checked)):hover {
+  background: rgba(72, 176, 93, 0.06);
+  border-color: var(--primary);
+}
+/* ----- oprosnik-form -------- */
+
+.oprosnik-form__submit {
+  width: 720px;
+  min-height: 376px;
+  color: var(--dark);
+}
+
+
+.oprosnik-form__input-wrapper {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 11px 0;
+  border: 2px solid var(--border-light-color);
+  border-radius: 28px;
+}
+
+.oprosnik-form__userdata{
+  
+}
+.oprosnik-form__input {
+  background: transparent;
+  border: none;
+  outline: transparent;
+}
+.oprosnik-form__input::placeholder {
+  font-size: 16px;
+  color: var(--gray);
+  opacity: 0.4;
+}
+
+
+
+
+
+
+
+
 /* ---------------- portfolio__section ---------------- */
 .portfolio__inner {
   padding-top: 110px;
@@ -441,19 +581,6 @@ header {
   margin-bottom: 48px;
 }
 
-/* 
-.oferta__img-wrap {
-  position: relative;
-  overflow: hidden;
-}
-.oferta__item-img {
-  width: 100%;
-  transition: transform 0.3s ease;
-}
-.oferta__item:hover .oferta__item-img {
-  transform: scale(1.1);
-}
-*/
 .portfolio__item {
   position: relative;
   overflow: hidden;
@@ -572,9 +699,7 @@ header {
   margin-bottom: 30px;
   text-align: center;
 }
-.reviews__slider{
-  
-}
+
 .reviews__card {
 
   background: var(--main-white);
@@ -582,7 +707,7 @@ header {
   min-height: 386px;
   padding: 60px;
   padding-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 
 }
 .card__top {
