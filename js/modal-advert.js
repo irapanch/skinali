@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Функция для закрытия модального окна
   function closeModal() {
     document.querySelector('.modal-advert').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Разрешение на скроллинг
   }
 
   // Закрытие при клике на бекдроп
