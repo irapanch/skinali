@@ -32,6 +32,23 @@ document.addEventListener('scroll', function() {
     } else {
         border.classList.remove('text__border-scroll');
     }
-    
+    const linkScroll = document.querySelector('.header__scroll-wrap' );
+    if (scrollPosition > 0) {
+        linkScroll.classList.add('header__scroll');
+    } else {
+        linkScroll.classList.remove('header__scroll');
+    }
+    const menuScroll = document.querySelector('.header__menu-list' );
+    if (scrollPosition > 0) {
+        menuScroll.classList.add('header__scroll');
+    } else {
+        menuScroll.classList.remove('header__scroll');
+    }
+    const phoneScroll = document.querySelector('.header__scrollphone-wrap' );
+    if (scrollPosition > 0) {
+        phoneScroll.classList.add('header__scroll');
+    } else {
+        phoneScroll.classList.remove('header__scroll');
+    }
 
   });

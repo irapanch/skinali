@@ -39,7 +39,10 @@
       </div>
       <div class="header__bottom">
         <div class="container header__inner">
-          <a class="header__logo" href="./index.html">LOGO</a>
+          <div class="header__scroll-wrap">
+            <a class="header__logo" href="./index.html">LOGO</a>
+          </div>
+          
           <nav>
             <ul class="header__menu-list">
               <li class="header__menu-item">
@@ -72,7 +75,8 @@
                   ></span
                 >
               </li>
-              <li class="header__menu-item">
+              <!-- dropdown-content-menu -->
+              <li class="header__menu-item dropdown">
                 <span class="ovh">
                   <a
                     class="text-animation"
@@ -81,7 +85,37 @@
                     >O nas</a
                   ></span
                 >
+                <ul class="header__dropdown-content">
+                  <li class="header__menu-item">
+                    <span class="ovh">
+                      <a class="text-animation" data-text="Blog" href="./blog.html"
+                        >Blog</a
+                      ></span
+                    >
+                  </li>
+                  <li class="header__menu-item">
+                    <span class="ovh">
+                      <a
+                        class="text-animation"
+                        data-text="Promocje"
+                        href="./promocje.html"
+                        >Promocje</a
+                      ></span
+                    >
+                  </li>
+                  <li class="header__menu-item">
+                    <span class="ovh">
+                      <a
+                        class="text-animation"
+                        data-text="Zostań partnerem"
+                        href="./zostan-partnerem.html"
+                        >Zostań partnerem</a
+                      ></span
+                    >
+                  </li>
+                </ul>
               </li>
+              <!-- //dropdown-content-menu -->
               <li class="header__menu-item">
                 <span class="ovh">
                   <a
@@ -115,18 +149,40 @@
             </ul>
           </nav>
           <div class="header_contacts">
-            <a class="phone" href="tel:+48512801889">
-              <svg class="phone-icon" width="10" height="16">
-                <use href="./images/icons/icons.svg#icon-phone-mob"></use>
-              </svg>
-              <span class="ovh">
-                <span
-                  class="text-animation text__border"
-                  data-text="Zadzwoń do nas"
-                  >Zadzwoń do nas</span
-                ></span
-              ></a
-            >
+            <div class="header__scrollphone-wrap">
+              <a class="phone"  href="tel:+48735042000">
+                <svg class="phone-icon" width="10" height="16">
+                  <use href="./images/icons/icons.svg#icon-phone-mob"></use>
+                </svg>
+                <span class="ovh">
+                  <span
+                    class="text-animation text__border"
+                    data-text="Zadzwoń do nas"
+                    >Zadzwoń do nas</span
+                  ></span
+                ></a
+              >
+              <!-- dropdown-content-contact -->
+              <!-- <div class="header__dropdown-contacts">
+                <div class="footer__contacts">
+                  <a href="tel:+48735042000">+48 735 042 000</a>
+                  <a href="tel:+48735042000">+48 735 042 000</a>
+                  <a class="email" href="mailto:info@szklane-panele.com"
+                    >info@szklane-panele.com</a
+                  >
+                </div>
+                <ul class="social__list">
+                  <li class="social__item"></li>
+                  <li class="social__item"></li>
+                  <li class="social__item"></li>
+                  <li class="social__item"></li>
+                  <li class="social__item"></li>
+                  <li class="social__item"></li>
+                </ul>
+              </div> -->
+               <!-- //dropdown-content-contact -->
+            </div>
+            
             <img
               class="language-icon"
               src="./images/lang_pl.png"
@@ -134,7 +190,7 @@
               width="24"
               height="24"
             />
-            <a class="main__btn" href="./cennik.html">
+            <a class="main__btn header__btn" href="./cennik.html">
               <span class="ovh"
                 ><span class="text-animation" data-text="CENNIK"
                   >CENNIK</span
@@ -915,6 +971,7 @@
         <h2>GORĄCA PROPOZYCJA!</h2>
       </div>
     </div>
+    <!-- <script src="./js/dropdown.js"></script> -->
     <script src="./js/visual_section-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper-init.js"></script>

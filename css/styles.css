@@ -46,23 +46,21 @@ p {
 .text-animation {
   display: block;
   position: relative;
-  transition: transform 0.5s ease; 
-  
+  transition: transform 0.5s ease;
 }
 
 .text-animation::after {
   content: attr(data-text);
   position: absolute;
-  top: 136%; 
+  top: 136%;
   left: 0;
   right: 0;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
-.ovh:hover .text-animation{
+.ovh:hover .text-animation {
   transform: translateY(-136%);
 }
-
 
 a:-webkit-any-link {
   text-decoration: none;
@@ -79,7 +77,7 @@ a:-webkit-any-link {
   color: var(--main-white);
   text-transform: uppercase;
   box-shadow: none;
-  transition: all 0.5s ease ;
+  transition: all 0.5s ease;
   outline: none;
 }
 .main__btn {
@@ -128,7 +126,7 @@ a:-webkit-any-link {
   transition: all 0.5s ease;
 }
 .header__top-sale:hover,
-.header__top-sale:focus{
+.header__top-sale:focus {
   color: var(--main-white);
 }
 header {
@@ -141,6 +139,8 @@ header {
 }
 .header__bottom-scroll {
   background: var(--main-white);
+}
+.header__scroll {
   color: var(--dark);
 }
 
@@ -153,11 +153,12 @@ header {
   color: var(--main-white);
   transition: all 0.3s ease;
 }
+
 .header__inner-scroll {
   padding-top: 12px;
   padding-bottom: 12px;
-  color: var(--dark);
 }
+
 .header__logo {
   display: block;
   width: 112px;
@@ -171,23 +172,82 @@ header {
   gap: 50px;
   font-size: 16px;
 }
-
+.header__menu-item {
+  position: relative;
+}
 .header__menu-item:hover,
 .header__menu-item:focus {
   color: var(--primary);
 }
+
+.header__dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: -25px;
+  min-width: 200px;
+  background: var(--main-white);
+  border-radius: 4px;
+  z-index: 12;
+  padding: 20px;
+  margin-top: 18px;
+
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__dropdown-content::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 23px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: var(--main-white);
+  transform: rotate(45deg);
+}
+
 .header_contacts {
+  position: relative;
   width: 362px;
   display: flex;
   gap: 30px;
   align-items: center;
 }
+/* .header__dropdown-contacts {
+  position: absolute;
+  top: 100%;
+  left: -25px;
+  min-width: 314px;
+  background: var(--main-white);
+  border-radius: 4px;
+  z-index: 12;
+  padding: 30px;
+  margin-top: 18px;
+
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__dropdown-contacts::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 23px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: var(--main-white);
+  transform: rotate(45deg);
+} */
 .phone {
   display: flex;
   align-items: center;
   font-size: 16px;
   gap: 5px;
-  transition:0.5s ease;
+  transition: 0.5s ease;
 }
 .phone:hover,
 .phone:focus {
@@ -637,9 +697,9 @@ header {
   margin: auto;
 }
 .portfolio__btn:hover,
-.portfolio__btn:focus{
+.portfolio__btn:focus {
   background: var(--primary);
-  color: var(--main-white) ;
+  color: var(--main-white);
 }
 
 /* ----------- form__section------------ */
@@ -685,6 +745,7 @@ header {
   background: transparent;
   border: none;
   outline: transparent;
+  color: var(--main-white);
 }
 .form__input::placeholder {
   font-size: 16px;
@@ -844,7 +905,7 @@ header {
   font-size: 16px;
 }
 .contact__btn:hover,
-.contact__btn:focus{
+.contact__btn:focus {
   background: var(--primary);
   color: var(--main-white);
 }
@@ -952,7 +1013,6 @@ header {
 /* <!-- =========== modal-advert =========== --> */
 
 .backdrop {
-
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -966,28 +1026,25 @@ header {
   align-items: center;
   justify-content: center;
 }
-.modal__inner{
+.modal__inner {
   position: relative;
-width: 790px;
-height: 790px;
-background-image:
-url(../images/black-abstract-sand-beach-background_326595-1.webp);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-color: var(--main-white);
-font-size: 48px;
-font-weight: 700;
-display: flex;
+  width: 790px;
+  height: 790px;
+  background-image: url(../images/black-abstract-sand-beach-background_326595-1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--main-white);
+  font-size: 48px;
+  font-weight: 700;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.close-icon{
+.close-icon {
   position: absolute;
   top: 16px;
   right: 16px;
   fill: var(--main-white);
 }
-
-
