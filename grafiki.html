@@ -3,9 +3,417 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kuchenny paneli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/grafiki.css" />
 </head>
 <body>
-    <h1>Grafiki page</h1>
+    <header class="header__fixed">
+        <div class="header__top">
+          <div class="header__top-inner container">
+            <p>
+              <a class="header__top-sale" href="./promocje.html">BLACK SALE</a>
+              : Tylko teraz:
+              <strong>-20% na montaż paneli szklanych! &nbsp;</strong>
+              📅 Zamów i zaliczkuj między
+              <strong>29.11 – 6.12</strong>
+              . &nbsp; 📞 Zadzwoń:
+              <a class="header__top-sale" href="tel:+48735042000"
+                ><strong>735 042 000</strong></a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="header__bottom  ">
+          <div class="container header__inner">
+            <div class="header__scroll-wrap">
+              <a class="header__logo" href="./index.html">LOGO</a>
+            </div>
+            
+            <nav>
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Oferta"
+                      href="./oferta.html"
+                      >Oferta</a
+                    ></span
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Grafiki"
+                      href="./grafiki.html"
+                      >Grafiki</a
+                    ></span
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Realizacje"
+                      href="./realizacje.html"
+                      >Realizacje</a
+                    ></span
+                  >
+                </li>
+                <!-- dropdown-content-menu -->
+                <li class="header__menu-item dropdown">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="O nas"
+                      href="./o-nas.html"
+                      >O nas</a
+                    ></span
+                  >
+                  <ul class="header__dropdown-content">
+                    <li class="header__menu-item">
+                      <span class="ovh">
+                        <a class="text-animation" data-text="Blog" href="./blog.html"
+                          >Blog</a
+                        ></span
+                      >
+                    </li>
+                    <li class="header__menu-item">
+                      <span class="ovh">
+                        <a
+                          class="text-animation"
+                          data-text="Promocje"
+                          href="./promocje.html"
+                          >Promocje</a
+                        ></span
+                      >
+                    </li>
+                    <li class="header__menu-item">
+                      <span class="ovh">
+                        <a
+                          class="text-animation"
+                          data-text="Zostań partnerem"
+                          href="./zostan-partnerem.html"
+                          >Zostań partnerem</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- //dropdown-content-menu -->
+                <li class="header__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Kontakt"
+                      href="./kontakt.html"
+                      >Kontakt</a
+                    ></span
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Cennik"
+                      href="./cennik.html"
+                      >Cennik</a
+                    ></span
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Oferty pracy"
+                      href="./oferty-pracy"
+                      >Oferty pracy</a
+                    ></span
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header_contacts">
+              <div class="header__scrollphone-wrap">
+                <a class="phone"  href="tel:+48735042000">
+                  <svg class="phone-icon" width="10" height="16">
+                    <use href="./images/icons/icons.svg#icon-phone-mob"></use>
+                  </svg>
+                  <span class="ovh">
+                    <span
+                      class="text-animation text__border"
+                      data-text="Zadzwoń do nas"
+                      >Zadzwoń do nas</span
+                    ></span
+                  ></a
+                >
+                <!-- dropdown-content-contact -->
+                <!-- <div class="header__dropdown-contacts">
+                  <div class="footer__contacts">
+                    <a href="tel:+48735042000">+48 735 042 000</a>
+                    <a href="tel:+48735042000">+48 735 042 000</a>
+                    <a class="email" href="mailto:info@szklane-panele.com"
+                      >info@szklane-panele.com</a
+                    >
+                  </div>
+                  <ul class="social__list">
+                    <li class="social__item"></li>
+                    <li class="social__item"></li>
+                    <li class="social__item"></li>
+                    <li class="social__item"></li>
+                    <li class="social__item"></li>
+                    <li class="social__item"></li>
+                  </ul>
+                </div> -->
+                 <!-- //dropdown-content-contact -->
+              </div>
+              
+              <img
+                class="language-icon"
+                src="./images/lang_pl.png"
+                alt="Language icon"
+                width="24"
+                height="24"
+              />
+              <a class="main__btn header__btn" href="./cennik.html">
+                <span class="ovh"
+                  ><span class="text-animation" data-text="CENNIK"
+                    >CENNIK</span
+                  ></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+    <div class="constructor ">
+        <div class="header__bottom-grafiki"></div>
+        <h1 class="constructor__title">Grafiki</h1>
+        <div class="constructor__inner container">
+            
+                <img class="constructor__img" src="./images/09ckitchen__1344.png" alt="Grafiki">
+
+
+
+                <div class="top "></div>
+                <div class="middle "></div>
+                <div class="bottom  "></div>
+                <div class="buttons">
+                    <button id="btn-top">Góra</button>
+                    <button id="btn-bottom">Dół</button>
+                    <button id="btn-same">Jak górne</button>
+                </div>
+        </div>
+        
+    
+        <div class="image-options">
+            <img src="./images/6285f6fc41cba393896340.jpg" alt="Option 1" class="image-option" data-src="./images/6285f6fc41cba393896340.jpg">
+            <img src="./images/64ef5a4fa46da381027717.jpg" alt="Option 2" class="image-option" data-src="./images/64ef5a4fa46da381027717.jpg">
+            <img src="./images/64f07e5843951924842525.jpg" alt="Option 3" class="image-option" data-src="./images/64f07e5843951924842525.jpg">
+        </div>
+    
+    </div>
+    <footer class="footer">
+        <div class="footer__inner container">
+          <div class="footer__main">
+            <a class="footer__logo" href="./index.html">LOGO</a>
+            <nav>
+              <ul class="footer__menu-list grid-container">
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Grafiki"
+                      href="./grafiki.html"
+                      >Grafiki</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="O nas"
+                      href="./o-nas.html"
+                      >O nas</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a class="text-animation" data-text="FAQ" href="./faq.html"
+                      >FAQ</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Oferta"
+                      href="./oferta.html"
+                      >Oferta</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a class="text-animation" data-text="Blog" href="./blog.html"
+                      >Blog</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Kontakt"
+                      href="./kontakt.html"
+                      >Kontakt</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Realizacje"
+                      href="./realizacje.html"
+                      >Realizacje</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Promocje"
+                      href="./promocje.html"
+                      >Promocje</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Polityka prywatności"
+                      href="./privacy.html"
+                      >Polityka prywatności</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Cennik"
+                      href="./cennik.html"
+                      >Cennik</a
+                    ></span
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <span class="ovh">
+                    <a
+                      class="text-animation"
+                      data-text="Zostań partnerem"
+                      href="./zostan-partnerem.html"
+                      >Zostań partnerem</a
+                    ></span
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__contacts">
+              <a href="tel:+48735042000">+48 735 042 000</a>
+              <a href="tel:+48735042000">+48 735 042 000</a>
+              <a class="email" href="mailto:info@szklane-panele.com"
+                >info@szklane-panele.com</a
+              >
+            </div>
+          </div>
+  
+          <div class="footer__bottom">
+            <div class="copyright">© 2024 LOGO. Wszelkie prawa zastrzeżone</div>
+            <ul class="social__list">
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+              <li class="social__item"></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script src="./js/grafiki-scroll.js"></script>
+    <script>
+        // Helper function to create a color input and handle its change event
+        function changeColorForBlock(buttonId, blockClass) {
+            const button = document.getElementById(buttonId);
+            const block = document.querySelector(blockClass);
+
+            button.addEventListener('click', () => {
+                // Create color input dynamically
+                const colorInput = document.createElement('input');
+                colorInput.type = 'color';
+                colorInput.style.display = 'none';
+                colorInput.style.position = 'absolute';
+        colorInput.style.left = `100px`;
+        colorInput.style.top = `100px`;
+        colorInput.style.zIndex = '1000';
+                document.body.appendChild(colorInput);
+
+                // Simulate click on the color input
+                colorInput.click();
+
+                // Listen for color selection
+                colorInput.addEventListener('input', (event) => {
+                    block.style.background = event.target.value;
+                    document.body.removeChild(colorInput);
+                });
+            });
+        }
+
+        // Function to copy the top block color to the bottom block
+        function setBottomColorToTop() {
+            const topBlock = document.querySelector('.top');
+            const bottomBlock = document.querySelector('.bottom');
+            bottomBlock.style.background = topBlock.style.background;
+        }
+
+        // Function to update the middle block with the selected image
+        function updateMiddleWithImage(event) {
+            const imageSrc = event.target.getAttribute('data-src');
+            const middleBlock = document.querySelector('.middle');
+            middleBlock.innerHTML = `<img src="${imageSrc}" alt="Selected Image">`;
+        }
+
+        // Attach color pickers to buttons
+        changeColorForBlock('btn-top', '.top');
+        changeColorForBlock('btn-bottom', '.bottom');
+
+        // Attach event for the 'Set Bottom Color to Top' button
+        const btnSame = document.getElementById('btn-same');
+        btnSame.addEventListener('click', setBottomColorToTop);
+
+        // Attach click event to each image option
+        const imageOptions = document.querySelectorAll('.image-option');
+        imageOptions.forEach(img => img.addEventListener('click', updateMiddleWithImage));
+    </script>
 </body>
 </html>
