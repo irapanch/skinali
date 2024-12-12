@@ -1,103 +1,184 @@
-
-.header__bottom-grafiki{
-    background-color:var(--secondary) ;
-    height: 141px;
+.header__bottom-grafiki {
+  background-color: var(--secondary);
+  height: 141px;
 }
-.constructor{
-    position: relative;
+.constructor {
+  position: relative;
 }
 
 .constructor__title {
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    font-size: 44px;
-    font-weight: 700;
-    text-transform: uppercase;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-
 .constructor__inner {
-    position: relative;
-    
+  position: relative;
 }
 
 .constructor__img {
-    width: 100%;
+  width: 100%;
 }
 
 .top {
-    position: absolute;
-    right: 0;
-    left: 13px;
-    top: 45px;
-    height: 491px;
-    background: #dddddd;
-    z-index: -1;
-    width: 1370px;
+  position: absolute;
+  right: 0;
+  left: 13px;
+  top: 45px;
+  height: 491px;
+  background: #dddddd;
+  z-index: -1;
+  width: 1370px;
 }
 
 .middle {
-    position: absolute;
-    top: 364px;
-    left: 359px;
-    width: 697px;
-    height: 159px;
-    background: #dddddd;
-    z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 364px;
+  left: 359px;
+  width: 697px;
+  height: 159px;
+  background: #dddddd;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle img {
-    width: 100%;
-            height: 100%;
-            object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bottom {
-    position: absolute;
-    right: 0;
-    left: 13px;
-    bottom: 0;
-    height: 277px;
-    background: #dddddd;
-    z-index: -1;
-    width: 1370px;
+  position: absolute;
+  right: 0;
+  left: 13px;
+  bottom: 0;
+  height: 277px;
+  background: #dddddd;
+  z-index: -1;
+  width: 1370px;
 }
 
 .buttons {
-    position: absolute;
-    left: 60px;
-    bottom: 45px;
-   
-    
+  position: absolute;
+  left: 60px;
+  bottom: 45px;
 }
 
 .buttons button {
-    margin-right: 10px;
-    padding: 10px;
-    cursor: pointer;
-    background-color:  var(--primary);
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--primary);
 }
 
 .image-options {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .image-options img {
-    width: 288px;
-    height: 70px;
-    margin: 0 10px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border-color 0.3s;
+  width: 288px;
+  height: 70px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 
 .image-options img:hover {
-    border-color: var(--primary);
+  border-color: var(--primary);
 }
 
+/* ---------- canvas ------------- */
+
+.constructor__paneli {
+  background: var(--gray);
+}
+
+.constructor__paneli__wrapper {
+  width: 1170px;
+  /* height: 580px; */
+  display: flex;
+  gap: 10px;
+  margin: auto;
+  background: #cdcdcd;
+  padding: 10px;
+
+  outline: 1px solid red;
+}
+
+.constructor__paneli-ui {
+  width: 750px;
+}
+
+.constructor__paneli-viewport {
+  position: relative;
+  height: 425px;
+  margin-bottom: 10px;
+  border: 2px dashed #373737;
+  background-image: url(../images/constructor__no-photo.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+  /* .constructor__paneli-viewport:not([style="background-image: url(../images/constructor__no-photo.png)"]) ~ .constructor__canvas { 
+    pointer-events: auto;
+ } */
+ .constructor__canvas {
+    width: 750px;
+    height: 425px;
+    /* pointer-events: none; */
+    pointer-events: auto;
+    
+  }
+.constructor__add-photo--overlay {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  z-index: 1;
+  margin-left: -77px;
+}
+.button--info {
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--main-white);
+  background-image: linear-gradient(to bottom, var(--primary), var(--primary));
+  border-radius: 28px;
+  width: 175px;
+}
+#the-file-input {
+  display: none;
+}
+
+.constructor__paneli-instruction {
+  background: #373737;
+  padding: 5px;
+  display: flex;
+  gap: 46px;
+}
+.constructor__info-list {
+  list-style: decimal;
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.constructor__paneli-variants {
+}
+
+.image-variant {
+  width: 288px;
+  height: 70px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
